@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+    <title>문서 권한 지정 애드온</title>
+    <description>
+        특정 유저에게만 문서보기 권한을 주는 에드온입니다.
+    </description>
+    <version>1.0</version>
+    <date>2012-12-22</date>
+
+    <author email_address="developer@kikni.com">
+        <name>키큰아이</name>
+    </author>
+    <license>GPL 2</license>
+
+    <extra_vars>
+        <var name="is_display_user" type="select">
+            <title>지정자 표시</title>
+            <options value="N">
+                <title>사용안함</title>
+            </options>
+            <options value="Y">
+                <title>사용함</title>
+            </options>
+            <description>문서 제목에 지정된 유저를 표시해줍니다.</description>
+        </var>
+    </extra_vars>
+
+    <extra_vars>
+        <var name="is_nickname" type="select">
+            <title>지정자 옵션</title>
+            <options value="N">
+                <title>아이디</title>
+            </options>
+            <options value="Y">
+                <title>닉네임</title>
+            </options>
+            <options value="S">
+                <title>소속 그룹</title>
+            </options>
+            <description>지정한 유저를 확인하기 위해서 무엇을 사용할지 결정합니다.</description>
+        </var>
+        <var name="group_list" type="text"  default="준회원,정회원,관리그룹">
+            <title>소속 그룹 목록</title>
+            <description>
+                사용중인 소속 그룹 목록을 작성해 주세요. (복수 등록은 , 로 구분)
+                기본:) 준회원,정회원,관리그룹
+            </description>
+        </var>
+    </extra_vars>
+</addon>
