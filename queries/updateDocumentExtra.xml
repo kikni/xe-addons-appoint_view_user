@@ -4,8 +4,7 @@
     </tables>
     <columns>
         <column name="extra_vars" var="extra_vars" notnull="notnull" />
-        <column name="is_secret" var="is_secret" />
-        <column name="status" var="status" />
+        <column name="status" var="is_secret" />
         <column name="title" var="title" />
     </columns>
     <conditions>
